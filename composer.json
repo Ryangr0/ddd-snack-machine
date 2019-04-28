@@ -3,7 +3,7 @@
         "psr-4": {"SnackMachine\\": "src/"}
     },
     "autoload-dev": {
-        "psr-4": {"SnackMachineTest\\": "tests/"}
+        "psr-4": {"SnackMachine\\Tests\\": "tests/"}
     },
     "require": {
         "prooph/common": "^4.3",
