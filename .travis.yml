@@ -7,3 +7,11 @@ install:
 
 script:
   - composer test -- -c phpunit.dist.xml
+
+branches:
+  only:
+    - master
+
+cache:
+  directories:
+    - $HOME/.composer/cache
