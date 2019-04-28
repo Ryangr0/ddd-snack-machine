@@ -35,20 +35,22 @@ class MoneyTest extends TestCase
     {
         $expectedAmount = \Money\Money::EUR(8888);
         $this->assertTrue(
-            $expectedAmount->equals(Money::create(
-                \Money\Money::EUR(1),
-                \Money\Money::EUR(2),
-                \Money\Money::EUR(5),
-                \Money\Money::EUR(10),
-                \Money\Money::EUR(20),
-                \Money\Money::EUR(50),
-                \Money\Money::EUR(100),
-                \Money\Money::EUR(200),
-                \Money\Money::EUR(500),
-                \Money\Money::EUR(1000),
-                \Money\Money::EUR(2000),
-                \Money\Money::EUR(5000),
-                )->total()),
+            $expectedAmount->equals(
+                Money::create(
+                    \Money\Money::EUR(1),
+                    \Money\Money::EUR(2),
+                    \Money\Money::EUR(5),
+                    \Money\Money::EUR(10),
+                    \Money\Money::EUR(20),
+                    \Money\Money::EUR(50),
+                    \Money\Money::EUR(100),
+                    \Money\Money::EUR(200),
+                    \Money\Money::EUR(500),
+                    \Money\Money::EUR(1000),
+                    \Money\Money::EUR(2000),
+                    \Money\Money::EUR(5000)
+                )->total()
+            )
         );
     }
 }
